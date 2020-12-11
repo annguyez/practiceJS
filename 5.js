@@ -9,6 +9,8 @@ const result = arrays.reduce((a,b)=>{
 console.log(result);
 console.log(arrays);
 
+//Everything
+
 function every(array, testparam) {
     // Your code here.
     for(let i=0;i<array.length;i++){
@@ -20,6 +22,7 @@ function every(array, testparam) {
 }
   
   console.log(every([1, 3, 16], a => a > 15));
+ // Everything
 class Vec{
     constructor(a,b){
         this.a = a;
@@ -52,13 +55,15 @@ console.log(new Vec(6, 7).length());
 
 let map = {one: true, two: true, hasOwnProperty: true};
 
+
+//Borrowing a method
 // // Fix this call
 // console.log(Object.prototype.hasOwnProperty(one));
 // // → true
 let a = Math.random();
 console.log(a);
 
-
+//Retry test
 function reliableMultiply(a, b) {
     // Your code here.
     return a*b;
@@ -66,7 +71,7 @@ function reliableMultiply(a, b) {
   
   console.log(reliableMultiply(8, 8));
   // → 64
-
+//The locked box
   const box = {
     locked: true,
     unlock() { this.locked = false; },
@@ -104,7 +109,7 @@ function reliableMultiply(a, b) {
   }
   console.log(box.locked);
   // → true
-
+//Regexp golf
   let cat = /ca[r|t]/, longer = /\w{7,}/ , whitespace =/\s[.|,|:|;|]/;
   verify(/cat/,
     ["my car", "bad cats"],
@@ -145,13 +150,13 @@ for (let str of no) if (regexp.test(str)) {
  console.log(`Unexpected match for '${str}'`);
 }
 }
-
+//Quoting style
 let text = "'I'm the cook,' he said, 'it's my job.'";
 // Change this call.
 console.log(text.replace(/'/, "\""));
 // → "I'm the cook," he said, "it's my job."
 
-
+//Numbers again
 
 let number = /^[+-]?(\d+(\.\d*)?)$/;
 
